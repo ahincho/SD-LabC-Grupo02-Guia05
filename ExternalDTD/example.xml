@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!-- Aqui podemos observar la reutilizacion de la estructura DTD creada para el Boletin -->
+<!DOCTYPE BOLETIN SYSTEM "./boletin.dtd">
+<BOLETIN>
+  <TITULO>BOLETIN OFICIAL DEL ESTADO (2DA EDICION)</TITULO>
+  <FECHA>
+    <AAAA>2023</AAAA>
+    <MM>06</MM>
+    <DD>04</DD>
+  </FECHA>
+</BOLETIN>
