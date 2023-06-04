@@ -1,0 +1,42 @@
+<!-- Aqui comienza el Documento de Declaracion de Tipo DTD (Externo) -->
+<!-- Declaracion del Elemento BOLETIN y sus SubElementos -->
+<!-- Un BOLETIN tiene un Titulo, una fecha y uno o varios Sumarios -->
+<!ELEMENT BOLETIN (TITULO, FECHA, (SUMARIO)*)>
+<!-- Un Titulo contiene informacion ingresada por el usuario -->
+<!ELEMENT TITULO (#PCDATA)>
+<!-- Declaracion del Elemento Fecha y sus SubElementos -->
+<!ELEMENT FECHA (AAAA, MM, DD)>
+<!-- Una Fecha esta conformada por un anio, mes y dia-->
+<!ELEMENT AAAA (#PCDATA)>
+<!ELEMENT MM (#PCDATA)>
+<!ELEMENT DD (#PCDATA)>
+<!-- Declaracion del Elemento Sumario y sus SubElementos -->
+<!-- Un Sumario contiene al menos una Seccion -->
+<!ELEMENT SUMARIO (SECCION+)>
+<!-- Declaracion del elemento Seccion y sus SubElementos -->
+<!-- Una Seccion contiene un Titulo y al menos un Apartado -->
+<!ELEMENT SECCION (TIT-SECCION, (APARTADO)+)>
+<!-- Un Titulo de Seccion es ingresado por el usuario -->
+<!ELEMENT TIT-SECCION (#PCDATA)>
+<!-- Declaracion del elemento Apartado y sus SubElementos -->
+<!-- Un Apartado contiene un Organismo y al menos un Parrafo -->
+<!ELEMENT APARTADO (ORGANISMO, (PARRAFO)+)>
+
+<!-- Un Organismo es ingresado por el usuario -->
+<!ELEMENT ORGANISMO (#PCDATA)>
+<!-- Un Parrafo contiene un Texto y una o varias Pagina -->
+<!ELEMENT PARRAFO (TEXTO, (PAGINA)+)>
+<!-- Un texto puede contener datos ingresados por el usuario -->
+<!-- Un texto puede contener elementos como una Ley, Orden, Decreto Real o Resolucion -->
+<!ELEMENT TEXTO (#PCDATA | LEY | ORDEN | RD | RES)*>
+<!-- Una Ley es ingresada por el usuario -->
+<!ELEMENT LEY (#PCDATA)>
+<!-- Una Orden es ingresada por el usuario -->
+<!ELEMENT ORDEN (#PCDATA)>
+<!-- Un Decreto Real es ingresada por el usuario -->
+<!ELEMENT RD (#PCDATA)>
+<!-- Una Resolucion es ingresada por el usuario -->
+<!ELEMENT RES (#PCDATA)>
+<!-- Una Pagina es ingresada por el usuario -->
+<!ELEMENT PAGINA (#PCDATA)>
+<!-- Aqui termina el Documento de Declaracion de Tipo DTD (Externo) -->
