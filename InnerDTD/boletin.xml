@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Aqui comienza el Documento de Declaracion de Tipo DTD (Interno) -->
+<!DOCTYPE BOLETIN [
+  <!-- Declaracion del Elemento BOE y sus SubElementos -->
+  <!-- Un Boletin Oficial del Estado tiene un Titulo, una fecha y uno o varios Sumarios -->
+  <!ELEMENT BOLETIN (TITULO, FECHA, (SUMARIO)*)>
+  <!-- Un Titulo contiene informacion ingresada por el usuario -->
+  <!ELEMENT TITULO (#PCDATA)>
+  <!-- Declaracion del Elemento Fecha y sus SubElementos -->
+  <!ELEMENT FECHA (AAAA, MM, DD)>
+  <!-- Una Fecha esta conformada por un anio, mes y dia-->
+  <!ELEMENT AAAA (#PCDATA)>
+  <!ELEMENT MM (#PCDATA)>
+  <!ELEMENT DD (#PCDATA)>
+  <!-- Declaracion del Elemento Sumario y sus SubElementos -->
+  <!-- Un Sumario contiene al menos una Seccion -->
+  <!ELEMENT SUMARIO (SECCION+)>
+  <!-- Declaracion del elemento Seccion y sus SubElementos -->
+  <!-- Una Seccion contiene un Titulo y al menos un Apartado -->
+  <!ELEMENT SECCION (TIT-SECCION, (APARTADO)+)>
+  <!-- Un Titulo de Seccion es ingresado por el usuario -->
+  <!ELEMENT TIT-SECCION (#PCDATA)>
+  <!-- Declaracion del elemento Apartado y sus SubElementos -->
+  <!-- Un Apartado contiene un Organismo y al menos un Parrafo -->
+  <!ELEMENT APARTADO (ORGANISMO, (PARRAFO)+)>
+  <!-- Un Organismo es ingresado por el usuario -->
+  <!ELEMENT ORGANISMO (#PCDATA)>
+  <!-- Un Parrafo contiene un Texto y una o varias Pagina -->
+  <!ELEMENT PARRAFO (TEXTO, (PAGINA)+)>
+  <!-- Un texto puede contener datos ingresados por el usuario -->
+  <!-- Un texto puede contener elementos como una Ley, Orden, Decreto Real o Resolucion -->
+  <!ELEMENT TEXTO (#PCDATA | LEY | ORDEN | RD | RES)*>
+  <!-- Una Ley es ingresada por el usuario -->
+  <!ELEMENT LEY (#PCDATA)>
+  <!-- Una Orden es ingresada por el usuario -->
+  <!ELEMENT ORDEN (#PCDATA)>
+  <!-- Un Decreto Real es ingresada por el usuario -->
+  <!ELEMENT RD (#PCDATA)>
+  <!-- Una Resolucion es ingresada por el usuario -->
+  <!ELEMENT RES (#PCDATA)>
+  <!-- Una Pagina es ingresada por el usuario -->
+  <!ELEMENT PAGINA (#PCDATA)>
+]>
+<!-- Aqui termina el Documento de Declaracion de Tipo DTD (Interno) -->
+<BOLETIN>
+  <TITULO>BOLETIN OFICIAL DEL ESTADO</TITULO>
+  <FECHA>
+    <AAAA>2001</AAAA>
+    <MM>03</MM>
+    <DD>27</DD>
+  </FECHA>
+  <SUMARIO>
+    <SECCION>
+      <TIT-SECCION>I. Disposiciones Generales</TIT-SECCION>
+      <APARTADO>
+        <ORGANISMO>MINISTERIO DE ASUNTOS EXTERIORES</ORGANISMO>
+        <PARRAFO>
+          <TEXTO>
+            <LEY>
+              Ley 1/2001 de 5 de marzo
+            </LEY>
+            , de la cesiÃ³n gratuita a las Comunidades AutÃ³nomasel Impuesto sobre Animales y Cosas establecido por el
+            <RD>
+              REAL DECRETO 13/1991
+            </RD>.
+          </TEXTO>
+          <PAGINA>11290</PAGINA>
+        </PARRAFO>
+        <PARRAFO>
+          <TEXTO>
+            <ORDEN>
+              ORDEN de 28 de febrero de 2001
+            </ORDEN>
+            por la ...
+          </TEXTO>
+          <PAGINA>11290</PAGINA>
+          <PAGINA>11291</PAGINA>
+        </PARRAFO>
+      </APARTADO>
+      <APARTADO>
+        <ORGANISMO>MINISTERIO DE HACIENDA</ORGANISMO>
+        <PARRAFO>
+          <TEXTO>
+            <RD>
+              REAL DECRETO 285/2001
+            </RD>
+            , de 19 de marzo, sobre ...
+          </TEXTO>
+          <PAGINA>11291</PAGINA>
+          <PAGINA>11292</PAGINA>
+          <PAGINA>11293</PAGINA>
+          <PAGINA>11294</PAGINA>
+        </PARRAFO>
+      </APARTADO>
+      <APARTADO>
+        <ORGANISMO>MINISTERIO DE FOMENTO</ORGANISMO>
+        <PARRAFO>
+          <TEXTO>
+            CORRECCIÃN de erratas de la Orden ...
+          </TEXTO>
+          <PAGINA>11291</PAGINA>
+          <PAGINA>11292</PAGINA>
+          <PAGINA>11293</PAGINA>
+          <PAGINA>11294</PAGINA>
+        </PARRAFO>
+      </APARTADO>
+    </SECCION>
+    <SECCION>
+      <TIT-SECCION>II. Autoridades y Personal</TIT-SECCION>
+      <APARTADO>
+        <ORGANISMO>CORTES GENERALES</ORGANISMO>
+        <PARRAFO>
+          <TEXTO>
+            <RES>
+              RESOLUCIÃN de 19 de marzo de 2001
+            </RES>
+            , de la ...
+          </TEXTO>
+          <PAGINA>11294</PAGINA>
+          <PAGINA>11295</PAGINA>
+        </PARRAFO>
+      </APARTADO>
+      <APARTADO>
+        <ORGANISMO>MINISTERIO DE ASUNTOS EXTERIORES</ORGANISMO>
+        <PARRAFO>
+          <TEXTO>
+            <RD>
+              REAL DECRETO 314/2001
+            </RD>
+            , de 24 de marzo, por el ...
+          </TEXTO>
+          <PAGINA>11291</PAGINA>
+          <PAGINA>11292</PAGINA>
+          <PAGINA>11293</PAGINA>
+          <PAGINA>11294</PAGINA>
+        </PARRAFO>
+      </APARTADO>
+    </SECCION>
+  </SUMARIO>
+</BOLETIN>
