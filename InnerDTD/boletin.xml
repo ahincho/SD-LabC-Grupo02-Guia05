@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <!-- Aqui comienza el Documento de Declaracion de Tipo DTD (Interno) -->
 <!DOCTYPE BOLETIN [
   <!-- Declaracion del Elemento BOE y sus SubElementos -->
@@ -59,7 +59,7 @@
             <LEY>
               Ley 1/2001 de 5 de marzo
             </LEY>
-            , de la cesiÃ³n gratuita a las Comunidades AutÃ³nomasel Impuesto sobre Animales y Cosas establecido por el
+            , de la cesión gratuita a las Comunidades Autónomasel Impuesto sobre Animales y Cosas establecido por el
             <RD>
               REAL DECRETO 13/1991
             </RD>.
@@ -96,7 +96,7 @@
         <ORGANISMO>MINISTERIO DE FOMENTO</ORGANISMO>
         <PARRAFO>
           <TEXTO>
-            CORRECCIÃN de erratas de la Orden ...
+            CORRECCIÓN de erratas de la Orden ...
           </TEXTO>
           <PAGINA>11291</PAGINA>
           <PAGINA>11292</PAGINA>
@@ -112,7 +112,7 @@
         <PARRAFO>
           <TEXTO>
             <RES>
-              RESOLUCIÃN de 19 de marzo de 2001
+              RESOLUCIÓN de 19 de marzo de 2001
             </RES>
             , de la ...
           </TEXTO>

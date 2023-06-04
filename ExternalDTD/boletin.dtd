@@ -21,7 +21,6 @@
 <!-- Declaracion del elemento Apartado y sus SubElementos -->
 <!-- Un Apartado contiene un Organismo y al menos un Parrafo -->
 <!ELEMENT APARTADO (ORGANISMO, (PARRAFO)+)>
-
 <!-- Un Organismo es ingresado por el usuario -->
 <!ELEMENT ORGANISMO (#PCDATA)>
 <!-- Un Parrafo contiene un Texto y una o varias Pagina -->
